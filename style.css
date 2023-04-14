@@ -4,6 +4,7 @@ body {
 
 span {
   display: inline-block;
+  max-width: 150px; /* set width for the span themselves */
 }
 
 #pic {
@@ -12,12 +13,22 @@ span {
   align-items: center;
 }
 
+/* for "big fancy pic" */
 #pic img{
   display: block;
   max-width: 100%;
-  height: 600px;
+  aspect-ratio: 0;
 }
 
-/* #pics span {
+/* for pics in the inline spans */
+#pics img {
+  width: 150px; /* Set the width to 150 pixels */
+  height: 150px; /* Set the height to 150 pixels */
+}
+
+
+/* this code makes a border around the inline spans that I don't want: 
+
+#pics span {
   border: 1px solid black;
 } */
